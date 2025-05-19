@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>DragoceanMC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#rangos">Rangos</a></li>
+      <li><a href="#login">Iniciar Sesión</a></li>
+      <li><a href="#panelAdmin">Panel</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <h1>DragoceanMC</h1>
+    <p>Servidor de Minecraft con temática oceánica y dragones. ¡Únete a nuestra comunidad!</p>
+    <p><strong>Dirección IP:</strong> dragocean.aternos.me</p>
+    <p>Compatible con jugadores <em>no-premium</em> (con sistema de login propio en el servidor).</p>
+    <p>Discord oficial: <a href="https://discord.gg/TquNSxMQSM" target="_blank">https://discord.gg/TquNSxMQSM</a></p>
+  </section>
+
+  <section id="rangos">
+    <h2>Rangos Disponibles</h2>
+    <div class="rango-card">
+      <img src="calamar.png" alt="Rango Calamar">
+      <h3>Rango Calamar</h3>
+      <p class="precio">Precio: $3/mes</p>
+    </div>
+    <div class="rango-card">
+      <img src="tiburon.png" alt="Rango Tiburón">
+      <h3>Rango Tiburón</h3>
+      <p class="precio">Precio: $5/mes</p>
+    </div>
+    <div class="rango-card">
+      <img src="dragon.png" alt="Rango Dragón">
+      <h3>Rango Dragón</h3>
+      <p class="precio">Precio: $12/mes</p>
+    </div>
+    <div class="rango-card">
+      <img src="leviatan.png" alt="Rango Leviatán">
+      <h3>Rango Leviatán</h3>
+      <p class="precio">Precio: $16/mes</p>
+    </div>
+    <table>
+      <tr>
+        <th>Rango</th>
+        <th>Mensual</th>
+        <th>Anual</th>
+        <th>Permanente</th>
+      </tr>
+      <tr>
+        <td>Calamar</td><td>$3</td><td>$9</td><td>$15</td>
+      </tr>
+      <tr>
+        <td>Tiburón</td><td>$5</td><td>$15</td><td>$25</td>
+      </tr>
+      <tr>
+        <td>Dragón</td><td>$12</td><td>$36</td><td>$60</td>
+      </tr>
+      <tr>
+        <td>Leviatán</td><td>$16</td><td>$48</td><td>$80</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="login">
+    <h2>Iniciar Sesión</h2>
+    <form id="formularioLogin">
+      <input type="text" id="nombreUsuario" placeholder="Usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+    <div id="mensajeLogin"></div>
+  </section>
+
+  <section id="panelAdmin" style="display:none">
+    <h2>Panel de Administrador</h2>
+    <form id="formularioCompra">
+      <input type="text" id="nombreJugador" placeholder="Nombre del Jugador" required>
+      <select id="rangoSeleccionado">
+        <option>Calamar</option>
+        <option>Tiburón</option>
+        <option>Dragón</option>
+        <option>Leviatán</option>
+      </select>
+      <select id="tipoCompra">
+        <option>Mensual</option>
+        <option>Anual</option>
+        <option>Permanente</option>
+      </select>
+      <button type="submit">Registrar Compra</button>
+    </form>
+    <table id="tablaCompras">
+      <tr>
+        <th>Nombre Jugador</th>
+        <th>Rango</th>
+        <th>Tipo</th>
+        <th>Fecha Compra</th>
+        <th>Fecha Vencimiento</th>
+      </tr>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
