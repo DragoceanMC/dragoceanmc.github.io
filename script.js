@@ -93,3 +93,9 @@ document.getElementById('formularioCompra').addEventListener('submit', function(
 window.addEventListener('DOMContentLoaded', (event) => {
   cargarCompras();
 });
+
+
+// Cargar compras al iniciar la página
+window.addEventListener('DOMContentLoaded', (event) => {
+  cargarCompras();
+});
